@@ -29,3 +29,10 @@ def run_tests():
 
 # Edit this code
 def triangle_number(n):
+
+    tri = 1
+
+    for i in range(2, n+1):
+        tri = tri + i
+
+    print(tri)

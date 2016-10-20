@@ -29,3 +29,15 @@ def run_tests():
 
 # Edit this code
 def fib(n):
+
+    fib = 1
+    last1 = 0
+    last2 = 0
+
+    for i in range(1, n):
+
+        last2 = last1
+        last1 = fib
+        fib = last1 + last2
+
+    print(fib)

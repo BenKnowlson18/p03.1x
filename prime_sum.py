@@ -30,3 +30,24 @@ def run_tests():
 # Edit this code
 def add_primes(n):
 
+    prime = 0
+    total = 0
+
+    for i in range(2, n+1):
+
+        prime = True
+
+        for x in range(i+1, n):
+
+            if i % x == 0 or n == 1:
+                prime = False
+
+        if prime == True:
+            total = total + i
+
+    print(total)
+            
+
+    
+
+
